@@ -1,37 +1,34 @@
-//If a number is divisible by 3, print "Fizz"
-//If a number is divisible by 5, print "Buzz"
-//If both, print "FizzBuzz"
-//If neither, print the number
+// FizzBuzz
 
+// If # is divisible by 3, print fizz
+// If # is divisible by 5, print buzz
+// By 3 and 5, print fizzBuzz
+// If neither, then print the number
 
-let num = 5;
+let number = 17;
 
-//Your solution here
-
-// if(num % 3 === 0 && num % 5 === 0) {
-//     console.log("FizzBuzz");
-// } else if (num % 3 === 0) {
-//     console.log("Fizz");
-// } else if (num % 5 === 0) {
-//     console.log("Buzz");
+// if (number % 3 === 0 && number % 5 === 0) {
+//     console.log('fizzBuzz');
+// } else if (number % 3 === 0) {
+//     console.log('fizz');
+// } else if (number % 5 === 0) {
+//     console.log('buzz');
 // } else {
-//     console.log(num);
+//     console.log(number);
 // }
 
 
-
+// Another way - to reduce runtime
 let result = "";
 
-if(num % 3 === 0) {
-    result += "Fizz";
+if (number % 3 === 0) {
+    result += 'fizz';
+}
+if (number % 5 === 0) {
+    result += 'buzz';
+}
+else {
+    result = number;
 }
 
-if(num % 5 === 0) {
-    result += "Buzz";
-}
-
-if(result === "") {
-    result = num;
-}
-
-console.log(result);
+console.log(result)
